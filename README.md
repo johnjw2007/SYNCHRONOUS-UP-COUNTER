@@ -41,14 +41,16 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 Developed by: John Wilfred Thomas J W 
 Register Number: 24013517
 */
-
+~~~
 module exp_11(out,clk,rstn);
 input clk,rstn; 
 output reg [3:0]out;
-always @(posedge clk) begin if(!rstn) out<=0; 
+always @(posedge clk)
+begin
+if(!rstn) out<=0; 
 else out<= out+1;
 end  endmodule
-
+~~~
 **RTL LOGIC UP COUNTER**
 ![image](https://github.com/user-attachments/assets/3f66041f-5c3a-4ef0-8399-b49a26c26771)
 
